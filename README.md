@@ -13,11 +13,6 @@ lyric-tag-translator run   "D:\Music" --dry-run # 试运行
 lyric-tag-translator run   "D:\Music" --out "D:\Music_已翻译"   # 写到另一个目录，源文件不动
 ```
 
-**Windows 上最省事的启动方式：直接双击 `start_gui.bat`。** 它会先查 Python、
-缺 `mutagen` 就自动装、出错时把 Python 的报错停在窗口里，不用记任何命令。
-（`.bat` 是纯 ASCII + CRLF 存的——cmd.exe 按系统 OEM 代码页读 `.bat` 的字节，
-存成带中文的 UTF-8 会乱码甚至解析失败。）
-
 ---
 
 ## 接你自己的 API
@@ -70,6 +65,8 @@ iPod 没有 App、没有屏幕数据库、不认外挂 `.lrc`。
 ## 安装
 
 需要 Python 3.10+。依赖只有 `mutagen` 一个，GUI 用标准库的 tkinter。
+
+> Windows 上也可以直接双击 `启动界面.bat`（或 `start_gui.bat`）：它会检查 Python、缺 `mutagen` 时自动安装，出错时把报错停在窗口里，不会一闪而过。
 
 ```bash
 pip install .

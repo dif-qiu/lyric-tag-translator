@@ -1,6 +1,6 @@
 [project]
 name = "lyric-tag-translator"
-version = "0.1.0"
+version = "0.1.1"
 description = "歌词嵌译：批量把歌词翻译成中文并写回音频的内嵌歌词字段（©lyr），面向 iPod 这类没有渲染层的设备"
 readme = "README.md"
 requires-python = ">=3.10"
